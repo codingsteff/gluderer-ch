@@ -1,0 +1,87 @@
+// ******* colors *******
+$titleMain: #fff;
+$titleSub: #696969;
+$text: #7f7f7f;
+$highlight: #DAA520;
+$backcolor: #101010;
+
+body {
+    color: $text;
+    background-color: $backcolor;
+}
+
+// ******* Mobile First *******
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1,
+h2 {
+    color: $highlight;
+}
+
+a,
+p,
+li {
+    font-size: 1.5rem;
+}
+
+hr {
+    background-color: $highlight;
+    height: 1px;
+    border: 0;
+    clear: both;
+}
+
+#headline {
+    padding-top: 10rem;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+    .container {
+        width: 750px;
+    }
+
+    #contactdetails {
+        width: 450px;
+    }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+    .container {
+        width: 1170px;
+    }
+}
+
+// ******* links *******
+a {
+    color: $highlight;
+}
+
+a:hover {
+    color: $text;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+// ******* typography *******
+.text-center {
+    text-align: center;
+}
